@@ -1,9 +1,7 @@
 from models import Dog
 
 def create_table(base,engine):
-    if __name__ == '__main__':
-        
-        base.metadata.create_all(engine)
+    base.metadata.create_all(engine)
 
 def save(session, dog):
     session.add(dog)
